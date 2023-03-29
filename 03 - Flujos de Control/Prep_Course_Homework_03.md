@@ -2,9 +2,26 @@
 
 1) Crear una variable que contenga un elemento del conjunto de números enteros y luego imprimir por pantalla si es mayor o menor a cero
 
+a = 10
+if (a < 0):
+    print(a, 'es menor que cero')
+elif (a > 0):
+    print(a, 'es mayor que cero')
+else:
+    print(a, 'es igual a cero')
+
 2) Crear dos variables y un condicional que informe si son del mismo tipo de dato
 
+b = True
+c = 'True'
+if (b == c):
+    print('b y c son iguales')
+else:
+    print('b y c no son iguales')
+
 3) Para los valores enteros del 1 al 20, imprimir por pantalla si es par o impar
+
+
 
 4) En un ciclo for mostrar para los valores entre 0 y 5 el resultado de elevarlo a la potencia igual a 3
 
