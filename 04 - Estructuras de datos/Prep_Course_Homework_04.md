@@ -2,7 +2,7 @@
 
 1) Crear una lista que contenga nombres de ciudades del mundo que contenga más de 5 elementos e imprimir por pantalla
 
-ciudades = ['Maracaibo', 'Bogota', 'Buenos Aires', 'Stanbul', 'Tokyo']
+ciudades = ['Maracaibo', 'Bogota', 'Buenos Aires', 'Stanbul', 'Tokyo', 'Cartagena',]
 print(ciudades)
 
 2) Imprimir por pantalla el segundo elemento de la lista
@@ -15,6 +15,7 @@ print(ciudades[1:4])
 
 4) Visualizar el tipo de dato de la lista
 
+print(type(ciudades))
 print(type(ciudades[2]))
 
 5) Visualizar todos los elementos de la lista a partir del tercero de manera genérica, es decir, sin explicitar la posición del último elemento
@@ -27,7 +28,9 @@ print(ciudades[:4])
 
 7) Agregar una ciudad más a la lista que ya exista y otra que no ¿Arroja algún tipo de error?
 
-ciudades = ['Maracaibo', 'Bogota', 'Buenos Aires', 'Stanbul', 'Tokyo', 'Tokyo', 'Venecia'] #ningun error
+ciudades.append('Ciudad de Méjico')
+ciudades.append('Montevideo')
+print(ciudades)
 
 8) Agregar otra ciudad, pero en la cuarta posición
 
