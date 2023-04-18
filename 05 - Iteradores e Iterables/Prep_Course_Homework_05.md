@@ -2,11 +2,44 @@
 
 1) A partir de una lista vacía, utilizar un ciclo while para cargar allí números negativos del -15 al -1
 
+lista = []
+elemento = 0
+while (elemento > -15):
+    elemento -= 1
+    lista.append(elemento)
+    print(lista)
+
 2) ¿Con un ciclo while sería posible recorrer la lista para imprimir sólo los números pares?
+
+lista = [1, 2, 3, 4, 5, 6, 7]
+elemento = 0 
+while (elemento < len(lista)):
+    if (lista[elemento] % 2 == 0):
+        print(lista[elemento])
+        elemento += 1
+    else:
+        elemento += 1
 
 3) Resolver el punto anterior sin utilizar un ciclo while
 
+lista = [1, 2, 3, 4, 5, 6, 7]
+elemento = 0 
+for elemento in lista:
+      if (lista[elemento] % 2 == 0):
+        print(lista[elemento])
+        elemento += 1
+
 4) Utilizar el iterable para recorrer sólo los primeros 3 elementos
+
+lista = [1, 2, 3, 4, 5, 6, 7]
+elemento = 0 
+while (elemento < len(lista[:3])):
+    if (lista[elemento] % 2 == 0):
+        print(lista[elemento])
+        elemento += 1
+    else:
+    print(lista[elemento])
+        elemento += 1
 
 5) Utilizar la función **enumerate** para obtener dentro del iterable, tambien el índice al que corresponde el elemento
 
