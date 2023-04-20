@@ -130,6 +130,20 @@ for i in lis:
 15) A partir de la lista de a continuación, contar la cantidad total de elementos que contiene, teniendo en cuenta que un elemento de la lista podría ser otra lista:<br>
 lis = [[1,2,3,4],'rojo','verde',[True,False,False],['uno','dos','tres']]
 
+for i in lis:
+    if type(i) == list:
+        n = 0
+        b = 0
+        while i[n] < range(i[b]):
+            print(i[n])
+            n += 1
+            if n == b:
+                pass
+        else:
+            pass
+    else:
+        pass
+print(i)
 
 
 16) Tomar la lista del punto anterior y convertir cada elemento en una lista si no lo es
