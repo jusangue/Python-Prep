@@ -106,6 +106,13 @@ nueva_lista = list(cadena)
 for i in nueva_lista:
     print(i) 
 
+cadena = 'Hola Mundo. Esto es una practica del lenguaje de programación Python'
+cadena = list(cadena)
+recorre = iter(cadena)
+largo = len(cadena)
+for i in range(0, largo):
+    print(next(recorre))
+
 13) Crear dos listas y unirlas en una tupla utilizando la función zip
 
 lista1 = [1, 2, 3, 4, 5, 6, 7]
@@ -115,35 +122,29 @@ print(list(lista3))
 
 14) A partir de la siguiente lista de números, crear una nueva sólo si el número es divisible por 7<br>
 lis = [18,21,29,32,35,42,56,60,63,71,84,90,91,100]
-
 lista7 = []
-n = 0
-while(n < 20):
-    lista7.append(n * 7)
-    n += 1
+for numero in lis:
+    if numero % 7 == 0:
+        lista7.append(numero)
 
-lista =[]
-for i in lis:
-    if(i in lista7):
-        lista.append(i)
+lis7 = [i for i in lis if i % 7 == 0]
+
 
 15) A partir de la lista de a continuación, contar la cantidad total de elementos que contiene, teniendo en cuenta que un elemento de la lista podría ser otra lista:<br>
 lis = [[1,2,3,4],'rojo','verde',[True,False,False],['uno','dos','tres']]
 
-for i in lis:
-    if type(i) == list:
-        n = 0
-        b = 0
-        while i[n] < range(i[b]):
-            print(i[n])
-            n += 1
-            if n == b:
-                pass
-        else:
-            pass
+cantidad = 0
+for elemento in lis:
+    if (type(elemento) == list):
+        cantidad += len(elemento)
     else:
-        pass
-print(i)
+        cantidad += 1
+print('La cantidad total de elementos es', cantidad)
 
 
 16) Tomar la lista del punto anterior y convertir cada elemento en una lista si no lo es
+lis = [[1,2,3,4],'rojo','verde',[True,False,False],['uno','dos','tres']]
+for indice, elemento in enumerate(lis):
+    if (type(elemento) != list):
+        lis[indice]=[elemento]
+print(lis)
